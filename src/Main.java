@@ -77,43 +77,58 @@ public class Main {
             int rand = keyboard.nextInt();
             System.out.println("Introdu coloana");
             int coloana = keyboard.nextInt();
-            if (rand == 1) {
+            if (rand == 1&& coloana>0&&coloana<=3) {
                 if (randul1.get(coloana).equals(" ") & jocuri % 2 == 1) {
                     randul1.put(coloana, "X");
                     jocuri++;
                     continue;
-                } else if (randul1.get(coloana).equals(" ") & jocuri % 2 == 0) {
+                }
+                if (randul1.get(coloana).equals(" ") & jocuri % 2 == 0) {
                     randul1.put(coloana, "O");
                     jocuri++;
                     continue;
                 }
+                else{
+                    System.out.println("Valoarea a fost introdusa");
+                    continue;
+                }
             }
-            if (rand == 2) {
+            if (rand == 2&&coloana>0&&coloana<=3) {
                 if (randul2.get(coloana).equals(" ") & jocuri % 2 == 1) {
                     randul2.put(coloana, "X");
                     jocuri++;
                     continue;
-                } else if (randul2.get(coloana).equals(" ") & jocuri % 2 == 0) {
+                }
+                if (randul2.get(coloana).equals(" ") & jocuri % 2 == 0) {
                     randul2.put(coloana, "O");
                     jocuri++;
                     continue;
                 }
+                else{
+                    System.out.println("Valoarea a fost introdusa");
+                    continue;
+                }
             }
-            if (rand == 3) {
+            if (rand == 3&& coloana>0&&coloana<=3) {
 
                 if (randul3.get(coloana).equals(" ") & jocuri % 2 == 1) {
                     randul3.put(coloana, "X");
                     jocuri++;
                     continue;
-                } else if (randul3.get(coloana).equals(" ") & jocuri % 2 == 0) {
+                }
+                if (randul3.get(coloana).equals(" ") & jocuri % 2 == 0) {
                     randul3.put(coloana, "O");
                     jocuri++;
                     continue;
                 }
+                else{
+                    System.out.println("Valoarea a fost introdusa");
+                    continue;
+                }
             }
-            if (jocuri == 11) {
-                System.out.println("Jocul a luat sfarsit");
-                break;
+            else{
+                System.out.println("Ai introdus o valoare gresita");
+                continue;
             }
 
         }
